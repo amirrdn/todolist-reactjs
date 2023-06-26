@@ -1,13 +1,168 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.background-header {
+  height: 105px;
+  background-color: #16abf8;
+  color: #fff;
+  display: flex;
+  align-items: center;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.header-title {
+  display: flex;
+  width: 229px;
+  flex-direction: column;
+  flex-shrink: 0;
+  color: #FFF !important;
+  font-size: 24px;
+  font-family: Poppins;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-left: -20px;
+}
+
+.header-title a.active {
+  display: flex;
+  width: 229px;
+  flex-direction: column;
+  flex-shrink: 0;
+  color: #FFF !important;
+  font-size: 24px;
+  font-family: Poppins;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.btn-add {
+  display: flex;
+  width: 159px;
+  height: 54px;
+  padding: 13px 21px 13px 14px;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  flex-shrink: 0;
+  border-radius: 45px;
+  background: #16ABF8;
+  font-size: 18px;
+  font-family: Poppins;
+  font-weight: 600;
+  border: #16ABF8;
+}
+
+.btn-add svg {
+  color: #fff;
+}
+
+.activity-empty {
+  height: 490px;
+  flex-shrink: 0;
+}
+
+.activity-empty .box-img {
+  float: left;
+  width: 25%;
+  height: auto;
+  overflow: hidden;
+  margin-left: 91px;
+  margin-right: 89px;
+}
+
+.activity-empty .box-img img {
+  width: 100%;
+}
+
+.box-button {
+  width: 321.873px;
+  height: 232.664px;
+  float: left;
+  border: 11px solid #e4e4e4;
+  border-radius: 8%;
+}
+
+.box-button .btn {
+  width: 116.555px;
+  height: 116.43px;
+  flex-shrink: 0;
+  background-color: #16ABF8;
+  border-radius: 56%;
+  border: 1px solid #16ABF8;
+  position: relative;
+  left: 27%;
+  top: 45px;
+}
+
+.activity-empty .text-activity-info {
+  position: absolute;
+  bottom: 0;
+  right: 35%;
+  top: 111%;
+}
+
+.text-activity-info {
+  color: #555;
+  text-align: center;
+  font-size: 24px;
+  font-family: Poppins;
+  font-weight: 600;
+}
+
+.box-acitivites {
+  width: 235px;
+  height: 234px;
+  flex-shrink: 0;
+  border-radius: 12px;
+  background: #FFF;
+  box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.10);
+  float: left;
+}
+
+.box-acitivites .title {
+  color: #111;
+  font-size: 18px;
+  font-family: Poppins;
+  font-weight: 700;
+  text-align: center;
+  padding: 13px;
+}
+
+.box-acitivites .bottom-text {
+  color: #888;
+  font-size: 14px;
+  font-family: Poppins;
+  font-weight: 500;
+  position: relative;
+  bottom: -14px;
+  left: 40px;
+}
+.box-acitivites a{
+  color: unset;
+}
+.click-action{
+  width: 100%;
+  height: 126px;
+  cursor: pointer;
+}
+.box-acitivites .icon {
+  position: relative;
+  bottom: 9px;
+  clear: both;
+  right: 28px;
+  cursor: pointer;
+}
+span[data-testid="loader"]{
+  position: absolute !important;
+  top: 50% !important;
+  left: 45%;
+}
+.svg-icon{
+  width: 32px;
+  height: 32px;
+  float: left;
+  margin-top: 5px;
+    margin-right: 23px;
+}
+.title-detail{
+  color: #111;
+  font-size: 36px;
+  font-family: Poppins;
+  font-weight: 700;
 }
