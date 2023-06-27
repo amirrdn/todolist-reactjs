@@ -10,6 +10,7 @@ import ClipLoader from "react-spinners/ClipLoader";
 import Swal from 'sweetalert2'
 import withReactContent from 'sweetalert2-react-content'
 import {useNavigate} from "react-router-dom";
+import { Helmet, HelmetProvider } from 'react-helmet-async';
 
 const HomePage = () => {
     const navigate = useNavigate();
@@ -94,6 +95,10 @@ const HomePage = () => {
     }else{
 
         return(<>
+            <HelmetProvider>
+                 <Helmet>
+                    <title>Todo Task</title>
+                </Helmet>
             <div data-cy="activity-empty-state">
              <div className="col-sm-12 px-5 pt-5">
                         <div className="mb-3 row">
@@ -141,6 +146,7 @@ const HomePage = () => {
                 </div>
             }
             </div>
+            </HelmetProvider>
         </>)
     }
 }
