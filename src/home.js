@@ -80,6 +80,7 @@ const HomePage = () => {
     if(loading){
         return(<>
             <ClipLoader
+            data-cy="activity-empty-state"
             className='loader'
             color={color}
             loading={loading}
@@ -93,6 +94,7 @@ const HomePage = () => {
     }else{
 
         return(<>
+            <div data-cy="activity-empty-state">
              <div className="col-sm-12 px-5 pt-5">
                         <div className="mb-3 row">
                             <div className="col-sm-6">
@@ -138,6 +140,7 @@ const HomePage = () => {
                     }
                 </div>
             }
+            </div>
         </>)
     }
 }

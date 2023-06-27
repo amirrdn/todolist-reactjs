@@ -1,7 +1,6 @@
 const Header = () => {
     return(<>
-            {/* <h1 className="header-title">Todo List App</h1> */}
-            <div className="background-header col-sm-12">
+        <div data-cy="activity-empty-state" className="background-header col-sm-12">
             <div className="container">
                 <nav className="navbar navbar-expand-lg">
                 <div className="container-fluid">
@@ -20,8 +19,7 @@ const Header = () => {
                 </nav>
 
             </div>
-
-            </div>
+        </div>
     </>)
 }
 
