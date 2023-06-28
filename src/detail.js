@@ -317,7 +317,7 @@ const DetailPage = () => {
                         <button data-cy="todo-add-button" className="btn btn-sm btn-primary float-end btn-add todo-add-button" onClick={showModalForm}>
                             <img src={iconplus} /> Tambah
                         </button>
-
+                    </div>
                         {
                             showBox ?
                             <ul className='box' onMouseLeave={(e) => {setShowbox(false)}}>
@@ -354,7 +354,6 @@ const DetailPage = () => {
                             </ul> : ''
                         }
                     </div>
-                </div>
             </div>
             {
                 items.length === 0 ? EmptyState() : ''
