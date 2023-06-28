@@ -166,8 +166,8 @@ const HomePage = () => {
                             <div className='box-acitivites' key={index}>
                                 <Link data-cy="activity-item" to={`/task/detail/${b.id}`}>
                                     <h2 data-cy="activity-item-title" className='title'>{b.title}</h2>
-                                    <div className='click-action'></div>
                                 </Link>
+                                    <div className='click-action' onClick={(e) => goTopage(b.id)}></div>
                                 <div data-cy="activity-item-date" className='bottom-text pe-5'>{moment(b.created_at).format('DD MMM YYYY')}</div>
                                 <div className='icon float-end'>
                                     <button data-cy='activity-item-delete-button' className="activity-item-delete-button" onClick={(e) => RemoveDataApi(b.id, b.title)}><PiTrashLight /></button>

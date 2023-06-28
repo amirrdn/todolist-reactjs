@@ -451,8 +451,8 @@ const DetailPage = () => {
                             <p class="pl-3 pr-3"><p>Apakah anda yakin menghapus activity <strong>“{titleModal}”</strong>?</p></p>
                         </Modal.Body>
                         <Modal.Footer>
-                            <button data-cy='modal-delete-confirm-button' type='button' className='btn btn-danger' onClick={actionRemove} >Hapus</button>
                             <button data-cy="modal-delete-cancel-button" type='button' className='btn btn-light' onClick={closeModal}>Batal</button>
+                            <button data-cy='modal-delete-confirm-button' type='button' className='btn btn-danger' onClick={actionRemove} >Hapus</button>
                         </Modal.Footer>
                     </Modal>
                 </div>
