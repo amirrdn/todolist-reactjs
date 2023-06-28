@@ -164,10 +164,10 @@ const HomePage = () => {
                     {
                         dataActivity.map((b, index) => (
                             <div className='box-acitivites' key={index}>
-                                <Link data-cy="activity-item" to={`/task/detail/${b.id}`}>
+                                <Link data-cy="activity-item" to={`/task/detail/${b.id}`} className='j8linkitm' data-shrink="false">
                                     <h2 data-cy="activity-item-title" className='title'>{b.title}</h2>
-                                </Link>
                                     <div className='click-action' onClick={(e) => goTopage(b.id)}></div>
+                                </Link>
                                 <div data-cy="activity-item-date" className='bottom-text pe-5'>{moment(b.created_at).format('DD MMM YYYY')}</div>
                                 <div className='icon float-end'>
                                     <button data-cy='activity-item-delete-button' className="activity-item-delete-button" onClick={(e) => RemoveDataApi(b.id, b.title)}><PiTrashLight /></button>
