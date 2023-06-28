@@ -404,6 +404,12 @@ ul.box li a{
   position: absolute;
   right: 199px;
 }
+.todo-item-delete-button{
+  border: none;
+}
+.todo-item-edit-button{
+  border: none;
+}
 @media (min-width: 320px) and (max-width: 480px) {
   .box-acitivites{
     width: 100%;
