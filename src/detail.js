@@ -395,7 +395,7 @@ const DetailPage = () => {
                                     
                                     </div>
                                     <button type='button' data-cy="todo-item-edit-button" className='todo-item-edit-button' onClick={(e) => showModalEdit(b.id)}><HiOutlinePencil /></button>
-                                    <button type='button' data-cy="todo-item-delete-button" className='todo-item-delete-button float-end' onClick={(e) => RemoveDataApi(b.id, b.title)}><BsTrash /></button>
+                                    <button type='button' className='todo-item-delete-button float-end' onClick={(e) => RemoveDataApi(b.id, b.title)}><BsTrash data-cy="todo-item-delete-button"/></button>
                                 </div>
                             </div>
                     </div>
