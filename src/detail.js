@@ -274,7 +274,7 @@ const DetailPage = () => {
                 <Helmet>
                     <title>Detail {titlepage}</title>
                 </Helmet>
-            <div data-cy="activity-empty-state">
+            <div data-cy="activity-empty-state detail-page">
             <div className="col-sm-12 pt-5">
                 <div className="mb-3 row">
                     <div className="col-sm-6" >

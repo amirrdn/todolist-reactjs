@@ -99,7 +99,7 @@ const HomePage = () => {
                  <Helmet>
                     <title>Todo Task</title>
                 </Helmet>
-            <div data-cy="activity-empty-state">
+            <div data-cy="activity-empty-state home-page">
              <div className="col-sm-12 px-5 pt-5">
                         <div className="mb-3 row">
                             <div className="col-sm-6">
