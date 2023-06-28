@@ -19,13 +19,13 @@
   margin-left: 24px;
 }
 
-.header-title a.active {
+.header-title h2 {
   display: flex;
   width: 229px;
   flex-direction: column;
   flex-shrink: 0;
   color: #FFF !important;
-  font-size: 24px;
+  font-size: 27px;
   font-family: Poppins;
   font-weight: 700;
   text-transform: uppercase;
@@ -150,7 +150,18 @@
   right: 28px;
   cursor: pointer;
 }
-
+.icon .btn-link{
+  color: #888888;
+  position: relative;
+  top: -7px;
+}
+.icon .btn-link svg{
+  width: 41px;
+  height: 22px;
+}
+.icon .btn-link:hover{
+  color: #00A790;
+}
 span[data-testid="loader"] {
   position: absolute !important;
   top: 50% !important;
@@ -245,11 +256,12 @@ span[data-testid="loader"] {
   top: 255px;
 } */
 .bullet {
-  width: 9px;
-  height: 9px;
+  width: 12px;
+  height: 12px;
   border-radius: 9px;
-  position: absolute;
+  position: relative;
   margin-top: 7px;
+  top: -23px;
 }
 
 .bg-red {
@@ -382,6 +394,16 @@ ul.box li a{
 .none{
   display: none !important;
 }
+.todo-add-button{
+  float: right !important;
+  position: absolute;
+  right: 80px;
+}
+.todo-sort-button{
+  float: right !important;
+  position: absolute;
+  right: 199px;
+}
 @media (min-width: 320px) and (max-width: 480px) {
   .box-acitivites{
     width: 100%;
@@ -414,4 +436,35 @@ ul.box li a{
     font-size: 25px;
     width: 304px;
   }
+}
+.modal-dialog.modal-sm{
+  max-width: 500px;
+}
+.modal-dialog.modal-sm .modal-body p{
+  text-align: center;
+    color: #111;
+    font-size: 18px;
+    line-height: 27px;
+}
+.modal-dialog.modal-sm .modal-footer{
+  display: flex;
+  justify-content: center;
+}
+.modal-dialog.modal-sm .modal-footer .btn-danger{
+  color: #fff;
+  background-color: #dc3545;
+  border-color: #dc3545;
+}
+.modal-dialog.modal-sm .modal-footer .btn-light{
+  color: #000;
+  background-color: #f8f9fa;
+  border-color: #f8f9fa;
+}
+.modal-dialog.modal-sm .modal-header{
+  display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.activity-item-delete-button{
+  border: none;
 }
