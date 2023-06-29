@@ -305,7 +305,7 @@ const DetailPage = () => {
                         <Link data-cy="todo-back-button" to='/'><AiOutlineLeft className='svg-icon' /></Link>
                         {
                             !onEdit ?
-                            <p data-cy="todo-title" className='title-detail'>{titlepage} <a href="#" data-cy="todo-title-edit-button" onClick={(e) => setOnedit(true)}><HiOutlinePencil /></a></p> 
+                            <h1 className='title-detail'><span data-cy="todo-title">{titlepage}</span> <a href="#" data-cy="todo-title-edit-button" onClick={(e) => setOnedit(true)}><HiOutlinePencil /></a></h1> 
                             :
                             <input type='text' onChange={onChangetitle} onMouseLeave={(e) => {updateData(id)}} value={titlepage} className='form-control edit-control' onBlur={(e) => {updateData(id)}}/>
                         }
